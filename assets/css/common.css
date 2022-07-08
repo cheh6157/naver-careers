@@ -1,0 +1,89 @@
+/* 공통 영역 */
+
+body{
+    position: relative;
+    min-width: 1229px;
+    margin: 0 auto;
+    padding-top: 64px;
+    -webkit-box-sizing: border-box;
+    font-family: 'TThoves','nanum', sans-serif;
+}
+
+.blind{
+    position: absolute;
+    width: 1px;height: 1px;
+    overflow: hidden;
+    clip: (0 0 0 0);
+    margin: -1px;
+}
+
+.common-inner{
+    position: relative;
+    padding: 0 104px;
+    margin: 0 auto;
+}
+/* gnb-item a */
+.gnb-area .gnb-item a{
+    display: block;
+    padding: 0 10px;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.36px;
+}
+
+/* sc 제목, 글 영역 */
+.sc-title{
+    font-size: 64px;
+    line-height: 71px;
+    letter-spacing: -0.64px;
+    margin-bottom: 20px;
+}
+.sc-desc{
+    display: inline;
+    vertical-align: middle;
+    padding-right: 30px;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -0.44px;
+    font-weight: bold;
+}
+
+/* link-more */
+.link-more{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    letter-spacing: -0.36px;
+}
+.link-more::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #000;
+}
+
+
+
+
+
+
+
+/* sp-img */
+.gnb-area .logo a,
+.search-area .ic-search,
+.sc-teams .title-area .number::after,
+.apply-area .link-apply .ap-text::after,
+.sc-people .button-prev,
+.sc-people .button-next,
+.sc-benefits .bt-prev,
+.sc-benefits .bt-next
+{
+    background: url(../images/icon/sp-img.png);
+    background-size: 328px 205px;
+}

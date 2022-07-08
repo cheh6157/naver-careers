@@ -1,0 +1,106 @@
+@import './font.css';
+@import './reset.css';
+@import './common.css';
+
+
+/* header */
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1010;
+}
+.gnb-area{
+    position: static;
+    display: flex;
+    height: 64px;
+    max-width: 1920px;
+    min-width: 768px;
+    padding: 0 104px 0 98px;
+}
+.gnb-area .logo{
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.gnb-area .logo a{
+    content: '';
+    display: block;
+    background-position: -105px 0px;
+    width: 223px;
+    height: 35px;
+}
+.gnb-area .column-left{
+    display: flex;
+    margin-left: 29px;
+}
+.gnb-area .gnb-list{
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.gnb-area .gnb-item:first-child {
+    margin-left: 0;
+} 
+.gnb-area .gnb-item{}   
+
+.gnb-area .column-right{
+    display: flex;
+    margin-left: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer{
+    background-color: #f2f2f2;
+    padding: 30px 104px 30px 98px;
+    display: flex;
+}
+.footer .text-box{
+    flex: 1;
+    display: flex;
+}
+
+.footer .text-box .copy{
+    margin-top: 2px;
+}
+.footer .text-box .policy{
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.28px;
+    color: #909090;
+    font-weight: bold;
+}
+.footer .select-box{}
+.footer select{
+    width: 280px;
+    padding: 10px 0;
+    border: 0;
+    outline: none;
+    background:#f2f2f2;
+    border-bottom: 2px solid #000;
+}
