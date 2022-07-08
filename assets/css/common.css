@@ -21,6 +21,9 @@ body{
     position: relative;
     padding: 0 104px;
     margin: 0 auto;
+    max-width: 1408px;
+    min-width: 1230px;
+    box-sizing: border-box;
 }
 /* gnb-item a */
 .gnb-area .gnb-item a{
