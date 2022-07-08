@@ -1,6 +1,11 @@
-.container{}
-
-.swiper-slide{position: relative;}
+.container{overflow: hidden;}
+/* 슬라이드 넘치는 부분을 지우기 위해 껍데기 부분에 overflow: hidden 을 준다 */
+.sc-mainslide .swiper-slide{height: 544px;}
+.sc-mainslide video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .slide-text{
     position: absolute;
@@ -189,21 +194,20 @@
 .sc-people .swiper{
     position: relative;
     margin-top: 60px;
-    padding-left: 104px;
     padding-bottom: 70px;
-    overflow: hidden;
+    overflow: initial;
 }
 .sc-people .swiper-wrapper{}
 .sc-people .control-box{
     display: flex;
     position: absolute;
     top: 95%;
-    right: 10%;
+    right: 0%;
     cursor: pointer;
 }
 .sc-people .button-prev{
     content: '';
-    background-position: -224px -172px;
+    background-position: -187px -172px;
     height: 32px;
     width: 33px;
     margin-right: 5px;
@@ -216,14 +220,31 @@
     height: 32px;
     width: 33px;
 }
+/* 오퍼시티로 색바꾸는거 수정 swiper-button-disabled */
+.sc-people .button-prev.swiper-button-disabled,
+.sc-people .button-next.swiper-button-disabled{
+    opacity: 0.5;
+}
+
 .sc-people .swiper-slide{width: 100%;}
 .sc-people .swiper-slide .img-box{
 
 }
-.sc-people .img-box a{display: block;height: 100%;}
+.sc-people .img-box a{
+    display: block;
+    height: 100%;
+    padding-bottom: 100%;
+    padding-bottom: 47.403%;
+    /* 화면비 계산 , 유동적 높이를 가지는 블록영역을 만들때 씀 */
+    background: #f00;
+    position: relative;
+}
 .sc-people .img-box a img{
+    position: absolute;
+    /* 유동적인 영역이 기준이고 해당이미지가 앱솔루트로 고정 */
+    top: 0;left: 0;
     width: 100%;
-    height: 520px;
+    height: 100%;
     object-fit: cover;
 }
 .sc-people .text-box{
@@ -271,8 +292,7 @@
 }
 .sc-benefits .swiper{
     position: relative;
-    margin: 55px -15px 0;
-    padding: 0 20px;
+    margin: 55px 0 0;
     padding-bottom: 80px;
 }
 .sc-benefits .swiper-wrapper{}
@@ -283,9 +303,9 @@
     display: block;
     height: 100%;
 }
-.sc-benefits .swiper-slide img{width: 90%;}
+.sc-benefits .swiper-slide img{width: 100%;}
 .sc-benefits .swiper-slide .text-box{
-    width: 90%;
+    width: 100%;
     overflow: hidden;
     margin-top: 29px;
     word-break: keep-all;
@@ -298,28 +318,7 @@
     letter-spacing: -0.36px;
     color: #000;
 }
-.sc-benefits .control-box{
-    display: flex;
-    position: absolute;
-    top: 94%;
-    right: 3%;
-    cursor: pointer;
-}
-.sc-benefits .bt-prev{
-    content: '';
-    background-position: -224px -172px;
-    height: 32px;
-    width: 33px;
-    margin-right: 5px;
-}
-.sc-benefits .bt-next{
-    content: '';
-    right: 15px;
-    background-position: -113px -172px;
-    width: 32px;
-    height: 32px;
-    width: 33px;
-}
+
 /* apply-area */
 .apply-area{
     padding: 95px 0 102px;
@@ -339,4 +338,22 @@
     height: 32px;
     width: 33px;
 }
- 
+
+@media screen and (max-width: 1100px) {
+    /* *1024을 기준으로 화면을 보고 잡아야함 */
+    .sc-benefits .text-box .bf-text br{
+        display: none;
+    }
+    .slide-text{
+        font-size: 9vw;
+    }
+}
+@media screen and (max-width: 1023px) {
+    /* *768을보고 잡아야함 */
+   
+}
+
+@media screen and (max-width: 767px) {
+    /* *320을 보고 잡아야함 */
+  
+}

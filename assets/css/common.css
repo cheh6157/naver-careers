@@ -2,7 +2,7 @@
 
 body{
     position: relative;
-    min-width: 1229px;
+    /* min-width: 1229px; */
     margin: 0 auto;
     padding-top: 64px;
     -webkit-box-sizing: border-box;
@@ -22,7 +22,7 @@ body{
     padding: 0 104px;
     margin: 0 auto;
     max-width: 1408px;
-    min-width: 1230px;
+    /* min-width: 1230px; */
     box-sizing: border-box;
 }
 /* gnb-item a */
@@ -70,23 +70,66 @@ body{
     height: 1px;
     background-color: #000;
 }
-
-
-
-
-
-
-
 /* sp-img */
-.gnb-area .logo a,
+.header .logo a,
 .search-area .ic-search,
 .sc-teams .title-area .number::after,
 .apply-area .link-apply .ap-text::after,
-.sc-people .button-prev,
-.sc-people .button-next,
-.sc-benefits .bt-prev,
-.sc-benefits .bt-next
+.control-box > *
 {
     background: url(../images/icon/sp-img.png);
     background-size: 328px 205px;
+}
+
+
+
+.control-box{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    cursor: pointer;
+}
+.button-prev{
+    content: '';
+    background-position: -187px -172px;
+    height: 32px;
+    width: 33px;
+    margin-right: 5px;
+}
+.button-next{
+    content: '';
+    right: 15px;
+    background-position: -113px -172px;
+    width: 32px;
+    height: 32px;
+    width: 33px;
+}
+/* 오퍼시티로 색바꾸는거 수정 swiper-button-disabled */
+.control-box .button-prev.swiper-button-disabled,
+.control-box .button-next.swiper-button-disabled{
+    opacity: 0.5;
+}
+
+
+/* 반응형 */
+@media screen and (max-width: 1100px) {
+    .header .logo a
+    {
+        /* 모바일 스프라이트 이미지 저장 후 새로운 좌표 추가 */
+        background: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_mo.png);
+        background-size: 195px 181px;
+    }
+    .common-inner{
+        padding: 0 22px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    /* *768을보고 잡아야함 */
+   
+}
+
+@media screen and (max-width: 767px) {
+    /* *320을 보고 잡아야함 */
+  
 }

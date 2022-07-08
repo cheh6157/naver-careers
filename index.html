@@ -17,61 +17,65 @@
 </head>
 <body>
     <header class="header">
-        <!-- group flex -->
-        <div class="gnb-area">
+        <div class="group-flex">
+            <div class="inner">
             <h1 class="logo"><a href=""><span class="blind">네이버 커리어 로고</span></a></h1>
-            <!-- gnb-area -->
-            <nav class="column-left">
-                <ul class="gnb-list">
-                    <li class="gnb-item"><a href="">Teams</a></li>
-                    <li class="gnb-item"><a href="">People</a></li>
-                    <li class="gnb-item"><a href="">Benefits</a></li>
-                    <li class="gnb-item"><a href="">Culture</a></li>
-                    <li class="gnb-item"><a href="">Velue</a></li>
-                </ul>
-            </nav>
-            <nav class="column-right">
-                <!-- class 명 수정 util -->
-                <ul class="gnb-list">
-                   <li class="gnb-item"><a href="">Jobs</a></li> 
-                   <li class="gnb-item"><a href="">Login</a></li> 
-                   <li class="gnb-item"><a href="">FAQ</a></li> 
-                </ul>  
-            </nav>
+                <nav class="gnb-area">
+                    <ul class="gnb-list">
+                        <li class="gnb-item"><a href="">Teams</a></li>
+                        <li class="gnb-item"><a href="">People</a></li>
+                        <li class="gnb-item"><a href="">Benefits</a></li>
+                        <li class="gnb-item"><a href="">Culture</a></li>
+                        <li class="gnb-item"><a href="">Velue</a></li>
+                    </ul>
+                </nav>
+                <nav class="util-area">
+                        <!-- class 명 수정 util -->
+                    <ul class="gnb-list">
+                        <li class="gnb-item"><a href="">Jobs</a></li>
+                        <li class="gnb-item"><a href="">Login</a></li>
+                        <li class="gnb-item"><a href="">FAQ</a></li>
+                    </ul>
+                    <button class="btn-menu">모바일메뉴</button>
+                </nav>
+                <div class="side-menu">
+                
+                </div>
+            </div>
         </div>
     </header>
     <main class="container"> 
-        <div class="swiper video">섹션
-            <!-- h2.blind -->
-            <!-- class 명  -->
+        <!-- section class 명 -->
+        <section class="swiper video sc-mainslide">
+            <h2 class="blind">메인 슬라이드</h2>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <video class="video01" autoplay="" muted="" playsinline="" loop="">
                         <source src="./assets/video/Paukova.mp4" type="video/mp4">
                     </video>
                     <!-- h3로 -->
-                    <p class="slide-text">Navigate New Horizons</p>
+                    <h3 class="slide-text">Navigate New Horizons</h3>
                 </div>
                 <div class="swiper-slide">
                     <video class="video01" autoplay="" muted="" playsinline="" loop="">
                         <source src="./assets/video/Joker.mp4" type="video/mp4">
                     </video>
-                    <p class="slide-text">Board the Navership</p>
+                    <h3 class="slide-text">Board the Navership</h3>
                 </div>
                 <div class="swiper-slide">
                     <video class="video01" autoplay="" muted="" playsinline="" loop="">
                         <source src="./assets/video/Yann_Bastard.mp4" type="video/mp4">
                     </video>
-                    <p class="slide-text">Navigate New Horizons</p>
+                    <h3 class="slide-text">Navigate New Horizons</h3>
                 </div>
                 <div class="swiper-slide">
                     <video class="video01" autoplay="" muted="" playsinline="" loop="">
                         <source src="./assets/video/Bram.mp4" type="video/mp4">
                     </video>
-                    <p class="slide-text">Board the Navership</p>
+                    <h3 class="slide-text">Board the Navership</h3>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="common-inner">
             <!-- sc-search -->
             <div class="search-area">
@@ -193,7 +197,6 @@
                                 <p class="sc-desc">성장을 위한 가장 확실한 방법은 뛰어난 동료들 사이에 있는 것입니다</p>
                                 <a href="" class="link-more">Learn more</a>
                             </div>
-                        <div class="common-inner">
                             <div class="swiper people">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -304,8 +307,8 @@
                                     </div>
                                 </div>
                                 <div class="control-box">
-                                    <div class="bt-prev"><span class="blind">이전</span></div>
-                                    <div class="bt-next"><span class="blind">다음</span></div>
+                                    <div class="button-prev"><span class="blind">이전</span></div>
+                                    <div class="button-next"><span class="blind">다음</span></div>
                                 </div>
                                             </div>
                     </section>

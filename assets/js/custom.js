@@ -27,7 +27,7 @@ $(function(){
      *
      */
     var peopleslide = new Swiper(".people", {
-        slidesPerView: 1.2,
+        slidesPerView: 1.1,
         spaceBetween: 20,
         navigation: {
           nextEl: ".button-next",
@@ -44,10 +44,10 @@ $(function(){
      */
      var bfslide = new Swiper(".benefits", {
       slidesPerView: 3,
-      spaceBetween: 0,
+      spaceBetween: 30,
       navigation: {
-        nextEl: ".bt-next",
-        prevEl: ".bt-prev",
+        nextEl: ".button-next",
+        prevEl: ".button-prev",
       },
     });
 
