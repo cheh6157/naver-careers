@@ -17,8 +17,10 @@
 </head>
 <body>
     <header class="header">
+        <!-- group flex -->
         <div class="gnb-area">
             <h1 class="logo"><a href=""><span class="blind">네이버 커리어 로고</span></a></h1>
+            <!-- gnb-area -->
             <nav class="column-left">
                 <ul class="gnb-list">
                     <li class="gnb-item"><a href="">Teams</a></li>
@@ -29,6 +31,7 @@
                 </ul>
             </nav>
             <nav class="column-right">
+                <!-- class 명 수정 util -->
                 <ul class="gnb-list">
                    <li class="gnb-item"><a href="">Jobs</a></li> 
                    <li class="gnb-item"><a href="">Login</a></li> 
@@ -37,13 +40,16 @@
             </nav>
         </div>
     </header>
-    <main class="container">
-        <div class="swiper video">
+    <main class="container"> 
+        <div class="swiper video">섹션
+            <!-- h2.blind -->
+            <!-- class 명  -->
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <video class="video01" autoplay="" muted="" playsinline="" loop="">
                         <source src="./assets/video/Paukova.mp4" type="video/mp4">
                     </video>
+                    <!-- h3로 -->
                     <p class="slide-text">Navigate New Horizons</p>
                 </div>
                 <div class="swiper-slide">
@@ -67,16 +73,20 @@
             </div>
         </div>
         <div class="common-inner">
+            <!-- sc-search -->
             <div class="search-area">
+                <!-- h2. 제목 -->
                 <form action="">
                     <fieldset>
-                        <legend class="blind">검색</legend>
+                        <legend class="blind"> 인재 검색</legend>
+                        <!-- ic -box 삭제 -->
                         <div class="ic-box">
                             <i class="ic-search"><span class="blind">돋보기 아이콘</span></i>
                         </div>
                         <div class="keyword-box">
-                            <label for="search-keyword">키워드</label>
-                            <input type="text" class="keyword" placeholder="프론트엔드 개발자">
+                            <!-- 라벨과 input 의 id로 묶어주기 가능 -->
+                            <label for="keyword">키워드</label>
+                            <input type="text" class="keyword" id="keyword" placeholder="프론트엔드 개발자">
                         </div>
                         <div class="selec-box">
                             <span class="selec-word">법인</span>
@@ -110,12 +120,14 @@
         </div>    
             <section class="sc-teams">
                 <div class="common-inner">
+                    <!-- group -title, group-head 대체가능 -->
                     <div class="row-top">
                         <h2 class="sc-title">Teams</h2>
                         <p class="sc-desc">서로 다른 사람들이 모여 한 방향으로 나아갑니다</p>
                         <a href="" class="link-more">Learn more</a>
                     </div>
                 </div>
+                <!-- group-team, group-content-->
                 <div class="row-bottom">
                     <ul class="teams-list">
                         <li class="teams-item">
@@ -173,152 +185,156 @@
                     </ul>
                 </div>
             </section>
-                <section class="sc-people">
-                    <div class="common-inner">
-                        <div class="row-top">
-                            <h2 class="sc-title">People</h2>
-                            <p class="sc-desc">성장을 위한 가장 확실한 방법은 뛰어난 동료들 사이에 있는 것입니다</p>
-                            <a href="" class="link-more">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="swiper people">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="img-box">
-                                    <a href=""><img src="./assets/images/img/people01.jpg" alt="NAVER LABS 박경식님 이미지"></a>
-                                </div>
-                                <div class="text-box">
-                                    <p class="sc-desc">로봇을 만들기 위해 사람을 공부합니다</p>
-                                     <a href="" class="link-more">Interview</a>
-                                    <div class="refer-box">
-                                        <span class="refer">NAVER LABS</span>
-                                        <span class="name">박경식</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="img-box">
-                                    <a href=""><img src="./assets/images/img/people02.jpg" alt="NAVER 고상우님 이미지"></a>
-                                </div>
-                                <div class="text-box">
-                                    <p class="sc-desc">좋은 영향력을 개발합니다</p>
-                                     <a href="" class="link-more">Interview</a>
-                                    <div class="refer-box">
-                                        <span class="refer">NAVER</span>
-                                        <span class="name">고상우</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="img-box">
-                                    <a href=""><img src="./assets/images/img/people03.jpg" alt="NAVER 고은경님 이미지"></a>
-                                </div>
-                                <div class="text-box">
-                                    <p class="sc-desc">성장의 화두를 만드는 일</p>
-                                     <a href="" class="link-more">Interview</a>
-                                    <div class="refer-box">
-                                        <span class="refer">NAVER</span>
-                                        <span class="name">고은경</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="img-box">
-                                    <a href=""><img src="./assets/images/img/people04.jpg" alt="NAVER 김도희님 이미지"></a>
-                                </div>
-                                <div class="text-box">
-                                    <p class="sc-desc">기술로 취향 저격</p>
-                                     <a href="" class="link-more">Interview</a>
-                                    <div class="refer-box">
-                                        <span class="refer">NAVER</span>
-                                        <span class="name">감도희</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="control-box">
-                            <div class="button-prev"><span class="blind">이전</span></div>
-                            <div class="button-next"><span class="blind">다음</span></div>
-                        </div>
-                    </div>
-                </section>
-                <section class="sc-benefits">
                 <div class="common-inner">
-                        <div class="row-top">
-                            <h2 class="sc-title">Benefits</h2>
-                            <p class="sc-desc">네이버의 일하는 문화는 계속 진화합니다</p>
-                            <a href="" class="link-more">Learn more</a>
-                        </div>
-                    <div class="swiper benefits">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="" class="bf-inner">
-                                    <img src="./assets/images/img/benefits01.png" alt="Financial Wellbeing 이미지">
-                                    <div class="text-box">
-                                        <h3 class="sc-desc">Financial Wellbeing</h3>
-                                        <p class="bf-text">회사의 미래가치와 성과를 함께 나누고,<br>생활의 안정을 지원합니다.</p>
-                                    </div>
-                                </a>
+                    <section class="sc-people">
+                            <!-- class 변경 -->
+                            <div class="row-top">
+                                <h2 class="sc-title">People</h2>
+                                <p class="sc-desc">성장을 위한 가장 확실한 방법은 뛰어난 동료들 사이에 있는 것입니다</p>
+                                <a href="" class="link-more">Learn more</a>
                             </div>
-                            <div class="swiper-slide">
-                                <a href="" class="bf-inner">
-                                    <img src="./assets/images/img/benefits02.png" alt="Time & Refresh 이미지">
-                                    <div class="text-box">
-                                        <h3 class="sc-desc">Time & Refresh</h3>
-                                        <p class="bf-text">저마다 몰입할 수 있는 환경이 다름을 알기에 시간과 공간 선택의 자율성을 가지며,<br>리프레시를 위한 충전의 기회도 마련합니다.</p>
+                        <div class="common-inner">
+                            <div class="swiper people">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <a href=""><img src="./assets/images/img/people01.jpg" alt="NAVER LABS 박경식님 이미지"></a>
+                                        </div>
+                                        <!-- class 변경 info-area > refer-box -->
+                                        <div class="text-box">
+                                            <p class="sc-desc">로봇을 만들기 위해 사람을 공부합니다</p>
+                                             <a href="" class="link-more">Interview</a>
+                                            <div class="refer-box">
+                                                <span class="refer">NAVER LABS</span>
+                                                <span class="name">박경식</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="" class="bf-inner">
-                                    <img src="./assets/images/img/benefits03.png" alt="WorkSpace 이미지">
-                                    <div class="text-box">
-                                        <h3 class="sc-desc">Work Space</h3>
-                                        <p class="bf-text">공간이 우리에게 미치는 영향을 잘 알기에,<br>우리가 일할 공간을 직접 설계합니다.</p>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <a href=""><img src="./assets/images/img/people02.jpg" alt="NAVER 고상우님 이미지"></a>
+                                        </div>
+                                        <div class="text-box">
+                                            <p class="sc-desc">좋은 영향력을 개발합니다</p>
+                                             <a href="" class="link-more">Interview</a>
+                                            <div class="refer-box">
+                                                <span class="refer">NAVER</span>
+                                                <span class="name">고상우</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="" class="bf-inner">
-                                    <img src="./assets/images/img/benefits04.png" alt="Meal & Snack 이미지">
-                                    <div class="text-box">
-                                        <h3 class="sc-desc">Meal & Snack</h3>
-                                        <p class="bf-text">우리를 움직이는 에너지원이자, 동료들과의 대화를 이끌어내는 음식을 풍성하게 제공합니다.</p>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <a href=""><img src="./assets/images/img/people03.jpg" alt="NAVER 고은경님 이미지"></a>
+                                        </div>
+                                        <div class="text-box">
+                                            <p class="sc-desc">성장의 화두를 만드는 일</p>
+                                             <a href="" class="link-more">Interview</a>
+                                            <div class="refer-box">
+                                                <span class="refer">NAVER</span>
+                                                <span class="name">고은경</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </a>
+                                    <div class="swiper-slide">
+                                        <div class="img-box">
+                                            <a href=""><img src="./assets/images/img/people04.jpg" alt="NAVER 김도희님 이미지"></a>
+                                        </div>
+                                        <div class="text-box">
+                                            <p class="sc-desc">기술로 취향 저격</p>
+                                             <a href="" class="link-more">Interview</a>
+                                            <div class="refer-box">
+                                                <span class="refer">NAVER</span>
+                                                <span class="name">감도희</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-box">
+                                    <div class="button-prev"><span class="blind">이전</span></div>
+                                    <div class="button-next"><span class="blind">다음</span></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="control-box">
-                            <div class="bt-prev"><span class="blind">이전</span></div>
-                            <div class="bt-next"><span class="blind">다음</span></div>
-                        </div>
-                    </div>
-                </div>
-                </section>
-                <div class="common-inner">
+                    </section>
+                    <section class="sc-benefits">
+                                <div class="row-top">
+                                    <h2 class="sc-title">Benefits</h2>
+                                    <p class="sc-desc">네이버의 일하는 문화는 계속 진화합니다</p>
+                                    <a href="" class="link-more">Learn more</a>
+                                </div>
+                            <div class="swiper benefits">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <!-- inner는  위에 커먼 이너로 나왔기 때문에 개인용도로 사용이 가능하다 굳이 사족을 붙일 이유는 없다 -->
+                                        <a href="" class="bf-inner">
+                                            <img src="./assets/images/img/benefits01.png" alt="Financial Wellbeing 이미지">
+                                            <div class="text-box">
+                                                <h3 class="sc-desc">Financial Wellbeing</h3>
+                                                <p class="bf-text">회사의 미래가치와 성과를 함께 나누고,<br>생활의 안정을 지원합니다.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="bf-inner">
+                                            <img src="./assets/images/img/benefits02.png" alt="Time & Refresh 이미지">
+                                            <div class="text-box">
+                                                <h3 class="sc-desc">Time & Refresh</h3>
+                                                <!-- 개인용도로 사용가능 사족 필요없다 -->
+                                                <p class="bf-text">저마다 몰입할 수 있는 환경이 다름을 알기에 시간과 공간 선택의 자율성을 가지며,<br>리프레시를 위한 충전의 기회도 마련합니다.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="bf-inner">
+                                            <img src="./assets/images/img/benefits03.png" alt="WorkSpace 이미지">
+                                            <div class="text-box">
+                                                <h3 class="sc-desc">Work Space</h3>
+                                                <p class="bf-text">공간이 우리에게 미치는 영향을 잘 알기에,<br>우리가 일할 공간을 직접 설계합니다.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="bf-inner">
+                                            <img src="./assets/images/img/benefits04.png" alt="Meal & Snack 이미지">
+                                            <div class="text-box">
+                                                <h3 class="sc-desc">Meal & Snack</h3>
+                                                <p class="bf-text">우리를 움직이는 에너지원이자, 동료들과의 대화를 이끌어내는 음식을 풍성하게 제공합니다.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="control-box">
+                                    <div class="bt-prev"><span class="blind">이전</span></div>
+                                    <div class="bt-next"><span class="blind">다음</span></div>
+                                </div>
+                                            </div>
+                    </section>
+                    <!-- section, class 명 수정 -->
                     <div class="apply-area">
-                        <h3 class="sc-desc">Board the Navership</h3>
+                        <h2 class="sc-desc">Board the Navership</h3>
                         <a href="" class="link-apply"><span class="ap-text">지원하기</span></a>
                     </div>
                 </div>
-    </main>
+            </main>
     <footer class="footer">
-            <div class="text-box">
-                <p class="copy">© NAVER Corp.</p>
-                <div class="policy">
-                    <a href="">개인정보 처리방침</a>
+            <div class="inner">
+                <div class="text-box">
+                    <p class="copy">© NAVER Corp.</p>
+                    <div class="policy">
+                        <a href="">개인정보 처리방침</a>
+                    </div>
                 </div>
+                <div class="select-box">
+                    <select name="" id="">
+                        <option value="">관련사이트</option>
+                        <option value="">NAVER</option>
+                        <option value="">NAVER Cloud</option>
+                        <option value="">WORKS MOBLE</option>
+                        <option value="">SNOW</option>
+                        <option value="">NAVER LABS</option>
+                    </select>
+                </div>
+                    </footer>
             </div>
-            <div class="select-box">
-                <select name="" id="">
-                    <option value="">관련사이트</option>
-                    <option value="">NAVER</option>
-                    <option value="">NAVER Cloud</option>
-                    <option value="">WORKS MOBLE</option>
-                    <option value="">SNOW</option>
-                    <option value="">NAVER LABS</option>
-                </select>
-            </div>
-    </footer>
 </body>
 </html>
