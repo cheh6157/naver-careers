@@ -22,7 +22,15 @@
             <h1 class="logo"><a href=""><span class="blind">네이버 커리어 로고</span></a></h1>
                 <nav class="gnb-area">
                     <ul class="gnb-list">
-                        <li class="gnb-item"><a href="">Teams</a></li>
+                        <li class="gnb-item">
+                            <a href="" class="team">Teams</a>
+                            <ul class="sub-list">
+                                <li class="sub-item"></li>
+                                <li class="sub-item"></li>
+                                <li class="sub-item"></li>
+                                <li class="sub-item"></li>
+                            </ul>
+                        </li>
                         <li class="gnb-item"><a href="">People</a></li>
                         <li class="gnb-item"><a href="">Benefits</a></li>
                         <li class="gnb-item"><a href="">Culture</a></li>
@@ -39,7 +47,36 @@
                     <button class="btn-menu">모바일메뉴</button>
                 </nav>
                 <div class="side-menu">
-                
+                    <div class="gnb-area">
+                        <ul class="gnb-list">
+                            <li class="gnb-item">
+                                <a href="" class="team">Teams</a>
+                                <ul class="sub-list">
+                                    <li class="sub-item"></li>
+                                    <li class="sub-item"></li>
+                                    <li class="sub-item"></li>
+                                    <li class="sub-item"></li>
+                                </ul>
+                            </li>
+                            <li class="gnb-item"><a href="">People</a></li>
+                            <li class="gnb-item"><a href="">Benefits</a></li>
+                            <li class="gnb-item"><a href="">Culture</a></li>
+                            <li class="gnb-item"><a href="">Velue</a></li>
+                        </ul>
+                    </div>
+                    <div class="util-area">
+                        <ul class="util-list">
+                            <li class="util-item"><a href="">Jobs</a></li>
+                            <li class="util-item"><a href="">Login</a></li>
+                            <li class="util-item"><a href="">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="lang-area">
+                        <ul class="lang-list">
+                            <li class="lang-item"><a href="">KR</a></li>
+                            <li class="lang-item"><a href="">EN</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,16 +115,13 @@
         </section>
         <div class="common-inner">
             <!-- sc-search -->
-            <div class="search-area">
-                <!-- h2. 제목 -->
+            <section class="sc-search">
+                <h2 class="blind">인재 검색 영역</h2>
                 <form action="">
                     <fieldset>
                         <legend class="blind"> 인재 검색</legend>
                         <!-- ic -box 삭제 -->
-                        <div class="ic-box">
-                            <i class="ic-search"><span class="blind">돋보기 아이콘</span></i>
-                        </div>
-                        <div class="keyword-box">
+                            <i class="ic-search"><span class="blind">돋보기 아이콘</span></i>                        <div class="keyword-box">
                             <!-- 라벨과 input 의 id로 묶어주기 가능 -->
                             <label for="keyword">키워드</label>
                             <input type="text" class="keyword" id="keyword" placeholder="프론트엔드 개발자">
@@ -120,19 +154,19 @@
                         </div>
                     </fieldset>
                 </form>
-            </div>
+            </section>
         </div>    
             <section class="sc-teams">
                 <div class="common-inner">
                     <!-- group -title, group-head 대체가능 -->
-                    <div class="row-top">
+                    <div class="group-title">
                         <h2 class="sc-title">Teams</h2>
                         <p class="sc-desc">서로 다른 사람들이 모여 한 방향으로 나아갑니다</p>
                         <a href="" class="link-more">Learn more</a>
                     </div>
                 </div>
                 <!-- group-team, group-content-->
-                <div class="row-bottom">
+                <div class="group-content">
                     <ul class="teams-list">
                         <li class="teams-item">
                             <div class="common-inner">
@@ -192,7 +226,7 @@
                 <div class="common-inner">
                     <section class="sc-people">
                             <!-- class 변경 -->
-                            <div class="row-top">
+                            <div class="group-title">
                                 <h2 class="sc-title">People</h2>
                                 <p class="sc-desc">성장을 위한 가장 확실한 방법은 뛰어난 동료들 사이에 있는 것입니다</p>
                                 <a href="" class="link-more">Learn more</a>
@@ -313,10 +347,10 @@
                                             </div>
                     </section>
                     <!-- section, class 명 수정 -->
-                    <div class="apply-area">
+                    <section class="sc-apply">
                         <h2 class="sc-desc">Board the Navership</h3>
                         <a href="" class="link-apply"><span class="ap-text">지원하기</span></a>
-                    </div>
+                    </seciton>
                 </div>
             </main>
     <footer class="footer">

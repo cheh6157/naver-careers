@@ -72,9 +72,9 @@ body{
 }
 /* sp-img */
 .header .logo a,
-.search-area .ic-search,
+.sc-search .ic-search,
 .sc-teams .title-area .number::after,
-.apply-area .link-apply .ap-text::after,
+.sc-apply .link-apply .ap-text::after,
 .control-box > *
 {
     background: url(../images/icon/sp-img.png);

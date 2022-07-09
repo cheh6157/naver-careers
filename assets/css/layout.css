@@ -34,7 +34,7 @@
     width: 223px;
     height: 35px;
 }
-.header .column-left{
+.header .gnb-area{
     display: flex;
     margin-left: 29px;
 }
@@ -57,7 +57,7 @@
     letter-spacing: -0.36px;
 }   
 
-.header .column-right{
+.header .util-area{
     display: flex;
     margin-left: auto;
     -webkit-box-align: center;
