@@ -4,7 +4,6 @@ body{
     position: relative;
     /* min-width: 1229px; */
     margin: 0 auto;
-    padding-top: 64px;
     -webkit-box-sizing: border-box;
     font-family: 'TThoves','nanum', sans-serif;
 }
@@ -33,6 +32,8 @@ body{
     line-height: 32px;
     letter-spacing: -0.36px;
 }
+
+
 
 /* sc 제목, 글 영역 */
 .sc-title{
@@ -80,6 +81,8 @@ body{
     background: url(../images/icon/sp-img.png);
     background-size: 328px 205px;
 }
+
+
 
 
 
