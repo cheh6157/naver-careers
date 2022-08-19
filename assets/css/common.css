@@ -82,7 +82,12 @@ body{
     background-size: 328px 205px;
 }
 
-
+.side-menu .gnb-area .team::after,
+.mb-search .icon-search::after
+{
+    background-image: url(../images/icon/msp-img.png);
+    background-size: 195px 181px;
+}
 
 
 
@@ -120,7 +125,7 @@ body{
     .header .logo a
     {
         /* 모바일 스프라이트 이미지 저장 후 새로운 좌표 추가 */
-        background: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_mo.png);
+        background: url(../images/icon/msp-img.png);
         background-size: 195px 181px;
     }
     .common-inner{

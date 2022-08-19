@@ -19,6 +19,25 @@ $(function(){
       $('.sub-menu').removeClass('active') //서브메뉴에 액티브클래스를 제거해라
     });
 
+    /*
+     * tablet button 
+     * @version 1.0.0 |||| @since 2022-01-16 |||| @author 본인이름 (은호)
+     */
+    $('.header .btn-menu').click(function(e){
+      e.preventDefault();
+      
+      $('.side-menu').addClass('active');
+      $('.btn-menu').removeClass('active');
+      $('.btn-close').addClass('active')
+    })
+
+    $('.header .btn-close').click(function(e){
+      e.preventDefault();
+      
+      $('.side-menu').removeClass('active');
+      $('.btn-close').removeClass('active');
+      $('.btn-menu').addClass('active')
+    })
 
 
 
@@ -45,8 +64,13 @@ $(function(){
      *
      */
     var peopleslide = new Swiper(".people", {
-        slidesPerView: 1.1,
-        spaceBetween: 20,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints:{
+          770:{
+            slidesPerView:1.1,
+          }
+        },
         navigation: {
           nextEl: ".button-next",
           prevEl: ".button-prev",
@@ -61,8 +85,13 @@ $(function(){
      * @version 1.0.0 |||| @since 2022-01-16 |||| @author 본인이름 (Nico)
      */
      var bfslide = new Swiper(".benefits", {
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 30,
+      breakpoints:{
+        770:{
+          slidesPerView:3,
+        }
+      },
       navigation: {
         nextEl: ".button-next",
         prevEl: ".button-prev",

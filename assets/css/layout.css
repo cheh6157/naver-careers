@@ -84,33 +84,29 @@
     -ms-flex-align: center;
     align-items: center;
 }
+.header .util-area > a{
+    display: block;
+    padding: 0 10px;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.36px;
+}
 .header .btn-menu{
     display: none;
 }
 .header .btn-close{
     display: none;
 }
-
 .header .side-menu{
-    position: absolute;
-    right: 0;
-    top: 64px;
+    position: fixed;
+    top: 60px;
+    right: -100%;
     width: 100%;
     height: 100vh;
-    background: #f00;
+    transition: 0.3s;
+    background: #fff;
+    z-index: 1010;
 }
-
-.side-menu .gnb-item a{}
-.side-menu .gnb-item .team{}
-.side-menu .gnb-item .team::before{}
-.side-menu .gnb-item .sub-menu{}
-.side-menu .gnb-item .sub-item{}
-.side-menu .util-area{margin-left: 29px;}
-.side-menu .util-list{}
-.side-menu .util-item{}
-.side-menu .lang-area{margin-left: 29px;}
-.side-menu .lang-list{}
-.side-menu .lang-item{}
 
 
 
@@ -127,6 +123,7 @@
 /* footer */
 .footer{
     background-color: #f2f2f2;
+    padding-bottom: 50px;
 }
 .footer .inner{
     display: flex;
@@ -183,9 +180,8 @@
     width: 160px;
     height: 23px;
     }
-    .header .btn-menu{
+    .header .btn-menu.active{
         display: block;
-        margin-right: 20px;
         border: 0;
         outline: none;
         background-image: url(../images/icon/msp-img.png);
@@ -196,6 +192,37 @@
         background-color:#fff;
         cursor: pointer;
     }
+    .header .btn-menu{
+        display: none;
+    }
+    .header .btn-close{
+        display: none;
+    }
+    .header .btn-close.active{
+        display: block;
+        border: 0;
+        outline: none;
+        background-image: url(../images/icon/msp-img.png);
+        background-size: 195px 181px;
+        background-position: -85px -49px;
+        width: 15px;
+        height: 15px;
+        background-color:#fff;
+        cursor: pointer;
+    }
+    .header .side-menu{
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        transition: 0.3s;
+        background: #fff;
+        z-index: 1010;
+    }
+    .header .side-menu.active{
+        right: 0;
+    }
     .header .side-menu .gnb-area{
         display: block;
         margin-left: 0;
@@ -205,10 +232,91 @@
         padding: 11px 0 9px;
     }
     .side-menu .gnb-item{
+        padding: 0 20px;
+    }
+    .side-menu .gnb-area a{
+        font-size: 22px;
+        line-height: 46px;
+        letter-spacing: -0.44px;
+    }
+    .side-menu .gnb-area .team::after{
+        content: '';
+        display: inline-block;
+        vertical-align: top;
+        margin: 20px 0 0 4px;
+        background-position: -136px -49px;
+        width: 10px;
+        height: 6px;
+    }
+    .side-menu .gnb-item .sub-list{
+        display: block;
+        padding: 3px 22px 15px;
+        display: none;
+    }
+    .side-menu .gnb-item .sub-item{
+        padding-left: 20px;
+        font-size: 18px;
+        line-height: 40px;
+        letter-spacing: -0.36px;
+        background-color: #fff;
+        font-weight: normal;
+    }
+    .header .side-menu .util-area{
+        display: block;
+        margin-left: 10px;
+    }
+    .side-menu .util-list{
+        display: block;
+        padding: 11px 0 9px;
+    }
+    .side-menu .util-item{
         display: block;
         padding: 0 22px;
     }
-  
+    .side-menu .util-area a{
+        display: block;
+        font-size: 22px;
+        line-height: 46px;
+        letter-spacing: -0.44px;
+    }
+    .side-menu .lang-area{
+        margin-left: 29px;
+    }
+    .side-menu .lang-list{
+        padding-top: 19px;
+        position: relative;
+        padding: 10px 0 11px;
+    }
+    .side-menu .lang-item{
+        margin-bottom: 9px;
+        font-size: 18px;
+        letter-spacing: -0.36px;
+        line-height: 28px;
+    }
+    .side-menu .lang-item a::before{
+        content: "";
+        margin: 8px 10px 0 0;
+        display: inline-block;
+        vertical-align: top;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 1px solid #d0d0d0;
+    }
+    .footer .inner{
+        display: block;
+    }
+    .footer .text-box{
+        padding: 0 0 20px 0;
+    }
+    .footer select{
+        width: 100%;
+        padding: 10px 0;
+        border: 0;
+        outline: none;
+        background:#f2f2f2;
+        border-bottom: 2px solid #b4b4b4;
+}
 }
 
 @media screen and (max-width: 767px) {
